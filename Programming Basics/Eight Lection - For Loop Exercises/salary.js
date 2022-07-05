@@ -3,7 +3,6 @@ function salary(input){
     let salary = Number(input[1])
     
     for(let i = 1; i <= tabs + 1; i++){
-        
         if(input[i] == "Facebook"){
             salary -= 150
         }else if(input[i] == "Instagram"){
@@ -20,12 +19,8 @@ function salary(input){
         console.log(salary); 
     }
 }
-salary(["10",
-"750",
-"Facebook",
-"Dev.bg",
-"Instagram",
-"Facebook",
-"Reddit",
-"Facebook",
-"Facebook"])
+salary(["3",
+"500",
+"Github.com",
+"Stackoverflow.com",
+"softuni.bg"])
