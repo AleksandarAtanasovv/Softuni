@@ -5,7 +5,6 @@ function bestPlayer(input){
     let amountOfGoals = 0;
     let bestScore = 0;
     let bestPlayer = ''
-    let biggestNumber = Number.MAX_SAFE_INTEGER;
     while(command !== 'END'){
         let name = command;
         let goals = Number(input[index]);
