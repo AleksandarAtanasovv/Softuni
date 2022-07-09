@@ -1,5 +1,5 @@
 # Softuni
-![download](https://user-images.githubusercontent.com/82751982/178098671-25ff2c3d-8e38-42a9-9fc6-cec4af9f7c30.png)
+<img src = "https://user-images.githubusercontent.com/82751982/178098671-25ff2c3d-8e38-42a9-9fc6-cec4af9f7c30.png" href="https://softuni.bg/">
 <p>
 <h2>BG</h2>
 Softuni Programming Curriculum.
