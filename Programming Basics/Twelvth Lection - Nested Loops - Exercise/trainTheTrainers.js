@@ -6,8 +6,6 @@ function trainTheTrainers(input){
     index++;
     let amountOfPresentations = 0;
     let totalGrade = 0;
-    let avgGradeAll  =0;
-    let currentPresentationGrade = 0;
     while(command !== 'Finish'){
         let presentation = command;
         amountOfPresentations++;
