@@ -2,7 +2,6 @@ function tournamentOfChristmas(input){
     let index= 0;
     let days = Number(input[index]);
     index++
-    let totalMoneyRaised = 0;
     let currentDayWin = 0;
     let currentDayLoss = 0;
     let totalWins = 0;
