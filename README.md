@@ -1,5 +1,5 @@
 # Softuni
-<img src = "![image](https://user-images.githubusercontent.com/82751982/179601296-4dd98cb8-0495-454d-8190-7cbbbcacbf22.png)g">
+[<img src = "![image](https://user-images.githubusercontent.com/82751982/179601296-4dd98cb8-0495-454d-8190-7cbbbcacbf22.png)g">](https://imgs.search.brave.com/QzrzAFQMLPsWR0WKqnjxQA5e84v2WtKPTuCItXfc16M/rs:fit:1200:330:1/g:ce/aHR0cDovL2lubm92/YXRpb25zdGFydGVy/Ym94LmJnL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE2LzA1L1Nv/ZnR1bmlfbG9nb190/cmFzcGFyZW50LnBu/Zw)
 <p>
 <h2>BG</h2>
 <a href="https://softuni.bg/curriculum" target="_blank">СофтУни учебна програма по програмиране.</a>
