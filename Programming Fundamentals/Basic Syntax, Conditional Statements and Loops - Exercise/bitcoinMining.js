@@ -5,8 +5,6 @@ function bitcoinMining(arr) {
   let grams = 0;
   let days = 0;
   let currentGrams = 0;
-  let currentDay = 0;
-  let currentMoney = 0;
   for (let i = 0; i < arr.length; i++) {
     days++;
     currentGrams = arr[i];
