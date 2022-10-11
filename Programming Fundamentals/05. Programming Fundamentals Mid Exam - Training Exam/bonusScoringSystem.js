@@ -7,8 +7,7 @@ function bonusScoringSystem(arr) {
   let maxBonus = 0;
   for (let i = 0; i < numberOfStudents; i++) {
     let attendances = arr[i];
-    let bonus =
-      (Number(attendances) / totalNumberOflectures) * (5 + additionalBonus);
+    let bonus = (Number(attendances) / totalNumberOflectures) * (5 + additionalBonus);
     if (bonus >= maxBonus) {
       maxBonus = bonus;
       maxAttendance = attendances;
