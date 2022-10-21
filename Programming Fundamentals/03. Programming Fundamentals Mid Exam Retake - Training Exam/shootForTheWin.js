@@ -21,6 +21,6 @@ function shootForTheWin(arr) {
     }
     line = arr.shift();
   }
-  console.log(targets);
+  console.log(`Shot targets: ${count} -> ${targets.join(" ")}`);
 }
-shootForTheWin(["24 50 36 70", "0", "4", "3", "1", "End"]);
+shootForTheWin(["30 30 12 60 54 66", "5", "2", "4", "0", "End"]);

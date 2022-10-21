@@ -1,38 +1,38 @@
 function heartDelivery(arr) {
   let neighbourHood = arr.shift().split("@").map(Number);
-  let line = arr.shift();
-  let currentIndex = 0;
-  let isSuccess = true;
-  let failCounter = 0;
-  while (line !== "Love!") {
-    let [command, length] = line.split(" ");
+  let houseIndex = 0;
 
-    currentIndex += Number(length);
-
-    if (currentIndex >= neighbourHood.length) {
-      currentIndex = 0;
-    }
-    if (neighbourHood[currentIndex] === 0) {
-      console.log(`Place ${currentIndex} already had Valentine's day.`);
-    } else {
-      neighbourHood[currentIndex] -= 2;
-      if (neighbourHood[currentIndex] === 0) {
-        console.log(`Place ${currentIndex} has Valentine's day.`);
+  for (const command of arr) {
+    let [jump, length] = command.split(" ");
+    if (jump === "Love!") {
+      console.log(`Cupid's last position was ${houseIndex}.`);
+      let failCounter = 0;
+      for (const house of neighbourHood) {
+        if (house > 0) {
+          failCounter++;
+        }
+      }
+      if (failCounter === 0) {
+        console.log("Mission was successful");
+      } else {
+        console.log(`Cupid has failed ${failCounter} places.`);
       }
     }
-    line = arr.shift();
-  }
-  console.log(`Cupid's last position was ${currentIndex}.`);
-  for (const house of neighbourHood) {
-    if (house !== 0) {
-      isSuccess = false;
-      failCounter++;
+    length = Number(length);
+    houseIndex += length;
+
+    if (houseIndex >= neighbourHood.length) {
+      houseIndex = 0;
     }
-  }
-  if (isSuccess) {
-    console.log("Mission was successful");
-  } else {
-    console.log(`Cupid has failed ${failCounter} places.`);
+
+    if (neighbourHood[houseIndex] === 0) {
+      console.log(`Place ${houseIndex} already had Valentine's day.`);
+    } else {
+      neighbourHood[houseIndex] -= 2;
+      if (neighbourHood[houseIndex] <= 0) {
+        console.log(`Place ${houseIndex} has Valentine's day.`);
+      }
+    }
   }
 }
 heartDelivery(["10@10@10@2", "Jump 1", "Jump 2", "Love!"]);
