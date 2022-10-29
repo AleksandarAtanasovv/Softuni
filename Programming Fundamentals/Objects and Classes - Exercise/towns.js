@@ -3,8 +3,8 @@ function towns(towns) {
     let townObj = {};
     let [name, lat, long] = town.split(" | ");
     townObj.town = name;
-    townObj.lat = Number(lat).toFixed(2);
-    townObj.long = Number(long).toFixed(2);
+    townObj.latitude = Number(lat).toFixed(2);
+    townObj.longitude = Number(long).toFixed(2);
     console.log(townObj);
   });
 }
