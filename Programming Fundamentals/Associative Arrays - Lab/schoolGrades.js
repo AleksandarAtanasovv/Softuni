@@ -1,5 +1,4 @@
 function schoolGrades(arr) {
-  const arrOfStudents = [];
   const student = {};
   for (const line of arr) {
     let [name, ...grades] = line.split(" ");
@@ -19,8 +18,4 @@ function schoolGrades(arr) {
     console.log(`${student[0]}: ${sum.toFixed(2)}`);
   }
 }
-schoolGrades(['Steven 3 5 6 4',
-'George 4 6',
-'Tammy 2 5 3',
-'Steven 6 3']
-);
+schoolGrades(["Steven 3 5 6 4", "George 4 6", "Tammy 2 5 3", "Steven 6 3"]);
