@@ -10,5 +10,5 @@ function basketballEquipment (input){
 
     console.log(totalCostOfTheEquipment);
 }
-basketballEquipment(["365 "]);
+basketballEquipment(["365"]);
 basketballEquipment(["550"])
