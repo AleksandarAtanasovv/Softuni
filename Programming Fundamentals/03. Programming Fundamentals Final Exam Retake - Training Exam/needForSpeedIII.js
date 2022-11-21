@@ -37,14 +37,13 @@ function needForSpeedIII(input) {
         }
         break;
       case "Revert":
-        if (cars[car].mileage > 10000) {
+        if (cars[car].mileage - Number(distance) < 10000) {
+          cars[car].mileage = 10000;
+        } else {
           cars[car].mileage -= Number(distance);
-          if (cars[car].mileage < 10000) {
-            cars[car].mileage = 10000;
-          } else {
-            console.log(`${car} mileage decreased by ${distance} kilometers`);
-          }
+          console.log(`${car} mileage decreased by ${distance} kilometers`);
         }
+
         break;
     }
     line = input.shift();
