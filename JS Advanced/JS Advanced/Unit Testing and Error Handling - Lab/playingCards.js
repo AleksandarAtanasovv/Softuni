@@ -18,4 +18,4 @@ function playingCards(face, suit) {
     },
   };
 }
-playingCards("A", "S");
+playingCards(10, "S");
