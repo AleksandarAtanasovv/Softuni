@@ -61,9 +61,12 @@ class footballTeam {
     }
   }
   transferWindowResult() {
-    this.invitedPlayers.sort((a, b) => a.name.localeCompare(b.name));
-    console.log("Players list:");
-    return this.invitedPlayers.map((x) => `${x.name}-${x.playerValue}`).join("\n");
+    const res = [];
+    res.push("Players list:");
+    this.invitedPlayers
+      .sort((a, b) => a.name - b.name)
+      .map((x) => res.push(`Player ${x.name}-${x.playerValue}`));
+    return res.join("\n");
   }
 }
 let fTeam = new footballTeam("Barcelona", "Spain");
