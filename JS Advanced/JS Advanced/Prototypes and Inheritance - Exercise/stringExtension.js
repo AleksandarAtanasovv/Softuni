@@ -1,12 +1,16 @@
 (function () {
   String.prototype.ensureStart = function (str) {
-    return this.startsWith(str) ? this.valueOf() : str + this.valueOf();
+    return this.startsWith(str) ? this.toString() : str + this.toString();
   };
   String.prototype.ensureEnd = function (str) {
-    return this.endsWith(str) ? this.valueOf() : this.valueOf() + str;
+    return this.endsWith(str) ? this.toString() : this.toString() + str;
   };
   String.prototype.isEmpty = function () {
-    this.length > 0 ? true : false;
+    if (this.length > 0) {
+      return false;
+    } else {
+      return true;
+    }
   };
   String.prototype.truncate = function (n) {
     if (this.length <= n) {

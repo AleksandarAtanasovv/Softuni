@@ -9,8 +9,8 @@ function solution() {
     constructor(color, gasWeight, ribbonColor, ribbonLength) {
       super(color, gasWeight);
       this._ribbon = {
-        ribbonColor,
-        ribbonLength,
+        color: ribbonColor,
+        length: ribbonLength,
       };
     }
     get ribbon() {
@@ -18,8 +18,8 @@ function solution() {
     }
   }
   class BirthdayBalloon extends PartyBalloon {
-    constructor(color, gasWeight, text) {
-      super(color, gasWeight);
+    constructor(color, gasWeight, ribbonColor, ribbonLength, text) {
+      super(color, gasWeight, ribbonColor, ribbonLength);
       this._text = text;
     }
     get text() {
