@@ -7,7 +7,6 @@ function solve() {
   const ulList = document.getElementById("list");
   const sentList = document.querySelector(".sent-list");
   const deletedList = document.querySelector(".delete-list");
-  const values = [];
   addBtn.addEventListener("click", addMail);
   resetBtn.addEventListener("click", (e) => {
     e.preventDefault();
