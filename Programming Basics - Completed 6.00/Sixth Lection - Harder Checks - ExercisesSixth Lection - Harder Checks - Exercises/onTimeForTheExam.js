@@ -17,14 +17,13 @@ function onTimeForTheExam(input) {
       console.log("Late");
       console.log(`${mins} minutes after the start`);
     } else if (mins >= 60) {
-        
-        if(minsLate < 10){
-            console.log("Late");
-            console.log(`${hoursLate}:0${minsLate} hours after the start`);
-        }else{
-            console.log("Late");
+      if (minsLate < 10) {
+        console.log("Late");
+        console.log(`${hoursLate}:0${minsLate} hours after the start`);
+      } else {
+        console.log("Late");
         console.log(`${hoursLate}:${minsLate} hours after the start`);
-        }
+      }
     }
   } else if (arriveMinutes === examMinutes || mins <= 30) {
     console.log("On time");
@@ -46,10 +45,4 @@ function onTimeForTheExam(input) {
     }
   }
 }
-onTimeForTheExam(["14",
-"00",
-"13",
-"55"])
-
-
-
+onTimeForTheExam(["14", "00", "13", "55"]);
