@@ -10,7 +10,7 @@ const offerTemplate = (offer) => html`
   </div>
 `;
 
-const noOffersTemplate = html` <h2>No offers yet.</h2> `;
+const noOffersTemplate = html`<h2>No offers yet.</h2> `;
 
 const dashboardTemplate = (offers) => html`
   <section id="dashboard">
